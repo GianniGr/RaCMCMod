@@ -12,4 +12,5 @@
 !.gitattributes
 !ASSETS_LICENSE.txt
 /run/
+.idea
 src/generated/resources/\.cache/
