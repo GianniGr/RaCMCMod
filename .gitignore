@@ -13,4 +13,5 @@
 !ASSETS_LICENSE.txt
 /run/
 .idea
+.gradle
 src/generated/resources/\.cache/
