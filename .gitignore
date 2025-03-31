@@ -11,6 +11,8 @@
 !/gradle.properties
 !.gitattributes
 !ASSETS_LICENSE.txt
-/run/
-run
 src/generated/resources/\.cache/
+/.gradle/
+/build/
+/run/
+/.idea/
