@@ -1,5 +1,6 @@
 package GianniGr.rac_mod;
 
+import GianniGr.rac_mod.block.ModBlocks;
 import GianniGr.rac_mod.entities.ModEntities;
 import GianniGr.rac_mod.item.ModCreateModeTabs;
 import GianniGr.rac_mod.item.ModItems;
@@ -37,6 +38,7 @@ public class Rac_mod {
         NetworkHandler.register();
         ModEntities.ENTITY_TYPES.register(modEventBus);
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModCreateModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in

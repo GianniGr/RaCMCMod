@@ -1,6 +1,7 @@
 package GianniGr.rac_mod.item;
 
 import GianniGr.rac_mod.Rac_mod;
+import GianniGr.rac_mod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,8 +19,13 @@ public class ModCreateModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.rac_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //Items
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
+
+                        //Blocks
+                        output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+                        output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
