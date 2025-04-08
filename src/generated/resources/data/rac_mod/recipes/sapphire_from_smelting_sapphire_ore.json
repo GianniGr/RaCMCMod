@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "sapphire",
+  "ingredient": {
+    "item": "rac_mod:sapphire_ore"
+  },
+  "result": "rac_mod:sapphire"
+}
