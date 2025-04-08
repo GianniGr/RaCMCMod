@@ -8,5 +8,11 @@
 
   "block.rac_mod.sound_block": "Sound Block",
 
+  "block.rac_mod.sapphire_sword": "Sapphire Sword",
+  "block.rac_mod.sapphire_pickaxe": "Sapphire Pickaxe",
+  "block.rac_mod.sapphire_axe": "Sapphire Axe",
+  "block.rac_mod.sapphire_shovel": "Sapphire Shovel",
+  "block.rac_mod.sapphire_hoe": "Sapphire Hoe",
+
   "creativetab.rac_tab": "Ratchet and Clank Tab"
 }
