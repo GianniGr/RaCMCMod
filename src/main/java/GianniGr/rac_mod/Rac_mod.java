@@ -1,5 +1,7 @@
 package GianniGr.rac_mod;
 
+import GianniGr.rac_mod.entities.ModEntities;
+import GianniGr.rac_mod.networking.NetworkHandler;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -28,11 +30,16 @@ public class Rac_mod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+
+        ModEntities.ENTITY_TYPES.register(modEventBus);
+
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        NetworkHandler.register();
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
