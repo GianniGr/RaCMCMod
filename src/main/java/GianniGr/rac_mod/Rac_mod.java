@@ -1,8 +1,10 @@
 package GianniGr.rac_mod;
 
 import GianniGr.rac_mod.entities.ModEntities;
+import GianniGr.rac_mod.item.ModItems;
 import GianniGr.rac_mod.networking.NetworkHandler;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -30,7 +32,7 @@ public class Rac_mod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-
+        ModItems.register(modEventBus);
         ModEntities.ENTITY_TYPES.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
@@ -47,7 +49,10 @@ public class Rac_mod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_SAPPHIRE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
