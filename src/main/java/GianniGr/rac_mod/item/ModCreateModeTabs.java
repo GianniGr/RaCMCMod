@@ -24,6 +24,7 @@ public class ModCreateModeTabs {
                         output.accept(ModItems.RAW_SAPPHIRE.get());
 
                         //Blocks
+                        output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                     })

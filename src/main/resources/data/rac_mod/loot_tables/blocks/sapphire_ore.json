@@ -24,11 +24,20 @@
                   }
                 }
               ],
-              "name": "minecraft:deepslate_iron_ore"
+              "name": "rac_mod:sapphire_ore"
             },
             {
               "type": "minecraft:item",
               "functions": [
+                {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 4.0,
+                    "min": 1.0
+                  },
+                  "function": "minecraft:set_count"
+                },
                 {
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops",
@@ -46,5 +55,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "rac_mod:blocks/deepslate_iron_ore"
+  "random_sequence": "rac_mod:blocks/sapphire_ore"
 }
