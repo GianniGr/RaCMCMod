@@ -16,7 +16,6 @@ build/
 # === Minecraft Specific ===
 run/
 eclipse/
-.gradle/
 **/config/
 **/logs/
 **/saves/
