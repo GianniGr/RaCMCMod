@@ -1,18 +1,40 @@
-/*
-!/src/
-!.gitignore
-!gradlew*
-!/gradle/
-!/LICENSE.txt
-!/README.md
-!build.gradle
-!.travis.yml
-!/textures/
-!/gradle.properties
-!.gitattributes
-!ASSETS_LICENSE.txt
-src/generated/resources/\.cache/
-/.gradle/
-/build/
-/run/
-/.idea/
+# === Java / IntelliJ / Eclipse ===
+*.iml
+.idea/
+*.ipr
+*.iws
+out/
+bin/
+*.class
+*.log
+
+# === Gradle ===
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# === Minecraft Specific ===
+run/
+eclipse/
+.gradle/
+**/config/
+**/logs/
+**/saves/
+**/resourcepacks/
+**/options.txt
+**/optionsof.txt
+**/optionsshaders.txt
+**/usernamecache.json
+**/usercache.json
+
+# === VS Code ===
+.vscode/
+*.code-workspace
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === Forge Mod Specific ===
+remappedSrc/
+remappedCode/
