@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "rac_mod:block/sound_block"
+    }
+  }
+}

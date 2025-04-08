@@ -27,6 +27,9 @@ public class ModCreateModeTabs {
                         output.accept(ModBlocks.SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+
+                        //Custom Blocks
+                        output.accept(ModBlocks.SOUND_BLOCK.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
