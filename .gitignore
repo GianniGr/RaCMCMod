@@ -37,3 +37,4 @@ Thumbs.db
 # === Forge Mod Specific ===
 remappedSrc/
 remappedCode/
+/run/

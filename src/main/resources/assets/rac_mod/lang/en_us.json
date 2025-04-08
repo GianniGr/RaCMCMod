@@ -1,4 +1,6 @@
 {
   "item.rac_mod.sapphire": "Sapphire",
-  "item.rac_mod.raw_sapphire": "Raw Sapphire"
+  "item.rac_mod.raw_sapphire": "Raw Sapphire",
+
+  "creativetab.rac_tab": "Ratchet and Clank Tab"
 }
