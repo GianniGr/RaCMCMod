@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "#": {
+      "item": "rac_mod:sapphire"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result": {
+    "item": "minecraft:diamond_pickaxe"
+  }
+}
