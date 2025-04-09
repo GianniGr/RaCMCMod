@@ -1,3 +1,8 @@
-// 1.20.1	2025-04-09T00:13:17.612866	Item Models: rac_mod
+// 1.20.1	2025-04-09T13:59:21.2799111	Item Models: rac_mod
 35204ce25dd2e4ea2705829916df2556a1401fe4 assets/rac_mod/models/item/raw_sapphire.json
 44485b601531608a2eeb9ccd613ceac342999ff4 assets/rac_mod/models/item/sapphire.json
+8c13a4b697db45a8bc0e86f6487fee832e4c0c75 assets/rac_mod/models/item/sapphire_axe.json
+8b4038461f0b027d105839c5f3ca3866f54914aa assets/rac_mod/models/item/sapphire_hoe.json
+d379ea3f64552daaeb3b3daa0c3f625e6ed96617 assets/rac_mod/models/item/sapphire_pickaxe.json
+dc67fe99e1fd272a611fc0f49bd10f97da8de678 assets/rac_mod/models/item/sapphire_shovel.json
+e5b820687bfa0d0e53aad19371bb029d0c7ce1ca assets/rac_mod/models/item/sapphire_sword.json

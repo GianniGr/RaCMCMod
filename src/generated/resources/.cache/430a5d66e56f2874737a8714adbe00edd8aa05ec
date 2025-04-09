@@ -1,5 +1,6 @@
-// 1.20.1	2025-04-09T00:13:17.611868	Tags for minecraft:block mod id rac_mod
+// 1.20.1	2025-04-09T13:59:21.2789121	Tags for minecraft:block mod id rac_mod
 316b62afd4381f38496e3cbf5cc9f4a2f39f0b32 data/minecraft/tags/blocks/mineable/pickaxe.json
 72069b41e889c64fda80358361b2176689d68c44 data/minecraft/tags/blocks/needs_diamond_tool.json
 264e059c953ae7cc833e23a8dab18eeeba8711f9 data/minecraft/tags/blocks/needs_iron_tool.json
 df97b43092bfcc8aa941cd908361a44023e12ce4 data/rac_mod/tags/blocks/metal_detector_valuables.json
+0af4eee482caec5e6f52a102cf524d8de014a364 data/rac_mod/tags/blocks/needs_sapphire_tool.json

@@ -1,18 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "building",
+  "category": "equipment",
   "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
     "S": {
       "item": "rac_mod:sapphire"
     }
   },
   "pattern": [
-    "SSS",
-    "SSS",
-    "SSS"
+    " SS",
+    " #S",
+    " # "
   ],
   "result": {
-    "item": "rac_mod:sapphire_block"
+    "item": "rac_mod:sapphire_axe"
   },
   "show_notification": true
 }

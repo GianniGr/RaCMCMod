@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "rac_mod:item/sapphire_hoe"
+  }
+}
