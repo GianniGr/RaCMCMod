@@ -38,3 +38,6 @@ Thumbs.db
 remappedSrc/
 remappedCode/
 /run/
+
+# === Generated ===
+src/generated/resources/.cache
