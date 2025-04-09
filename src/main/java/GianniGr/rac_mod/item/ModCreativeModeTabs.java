@@ -43,6 +43,7 @@ public class ModCreativeModeTabs {
 
                         //Custom Blocks
                         output.accept(ModBlocks.SOUND_BLOCK.get());
+                        output.accept(ModBlocks.EXPLOSIVE_CRATE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

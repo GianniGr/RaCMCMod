@@ -1,15 +1,13 @@
 package GianniGr.rac_mod.block;
 
 import GianniGr.rac_mod.Rac_mod;
+import GianniGr.rac_mod.block.custom.ExplosiveCrate;
 import GianniGr.rac_mod.block.custom.SoundBlock;
 import GianniGr.rac_mod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -33,6 +31,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK)));
+
+    public static final RegistryObject<Block> EXPLOSIVE_CRATE = registerBlock("explosive_crate",
+            () -> new ExplosiveCrate(BlockBehaviour.Properties.copy(Blocks.TNT)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
