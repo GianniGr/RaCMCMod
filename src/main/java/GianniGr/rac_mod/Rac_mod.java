@@ -1,12 +1,16 @@
 package GianniGr.rac_mod;
 
 import GianniGr.rac_mod.block.ModBlocks;
+import GianniGr.rac_mod.block.entity.ModBlockEntities;
 import GianniGr.rac_mod.entities.ModEntities;
 import GianniGr.rac_mod.item.ModCreativeModeTabs;
 import GianniGr.rac_mod.item.ModItems;
 import GianniGr.rac_mod.networking.NetworkHandler;
+import GianniGr.rac_mod.screen.GemPolishingStationScreen;
+import GianniGr.rac_mod.screen.ModMenuTypes;
 import GianniGr.rac_mod.sound.ModSounds;
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -40,6 +44,8 @@ public class Rac_mod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
@@ -67,6 +73,7 @@ public class Rac_mod {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
         }
     }
 }

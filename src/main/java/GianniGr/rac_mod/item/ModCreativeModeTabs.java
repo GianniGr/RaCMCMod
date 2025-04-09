@@ -41,6 +41,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
 
+                        //Block Entitites
+                        output.accept(ModBlocks.GEM_POLISHING_STATION.get());
+
                         //Custom Blocks
                         output.accept(ModBlocks.SOUND_BLOCK.get());
                         output.accept(ModBlocks.EXPLOSIVE_CRATE.get());

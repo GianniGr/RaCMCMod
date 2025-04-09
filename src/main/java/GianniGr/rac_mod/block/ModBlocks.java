@@ -2,6 +2,7 @@ package GianniGr.rac_mod.block;
 
 import GianniGr.rac_mod.Rac_mod;
 import GianniGr.rac_mod.block.custom.ExplosiveCrate;
+import GianniGr.rac_mod.block.custom.GemPolishingStationBlock;
 import GianniGr.rac_mod.block.custom.SoundBlock;
 import GianniGr.rac_mod.item.ModItems;
 import GianniGr.rac_mod.sound.ModSounds;
@@ -35,6 +36,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> EXPLOSIVE_CRATE = registerBlock("explosive_crate",
             () -> new ExplosiveCrate(BlockBehaviour.Properties.copy(Blocks.TNT)));
+
+    public static final RegistryObject<Block> GEM_POLISHING_STATION = registerBlock("gem_polishing_station",
+            () -> new GemPolishingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
