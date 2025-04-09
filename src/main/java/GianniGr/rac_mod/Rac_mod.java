@@ -2,11 +2,10 @@ package GianniGr.rac_mod;
 
 import GianniGr.rac_mod.block.ModBlocks;
 import GianniGr.rac_mod.entities.ModEntities;
-import GianniGr.rac_mod.item.ModCreateModeTabs;
+import GianniGr.rac_mod.item.ModCreativeModeTabs;
 import GianniGr.rac_mod.item.ModItems;
 import GianniGr.rac_mod.networking.NetworkHandler;
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -39,7 +38,7 @@ public class Rac_mod {
         ModEntities.ENTITY_TYPES.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModCreateModeTabs.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

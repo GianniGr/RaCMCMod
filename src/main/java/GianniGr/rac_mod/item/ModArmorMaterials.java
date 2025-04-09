@@ -10,7 +10,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    SAPPHIRE("sapphire", 26, new int[]{5, 7, 5, 4}, 25, SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.SAPPHIRE.get()));
+    SAPPHIRE("sapphire", 26, new int[]{5, 7, 5, 4}, 25, SoundEvents.ARMOR_EQUIP_GOLD,
+            1f, 0f, () -> Ingredient.of(ModItems.SAPPHIRE.get()));
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;
@@ -22,7 +23,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = {11, 16, 16, 15, 13};
 
-    ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantnmentValue, SoundEvent equipSound, float toughness, float knockbackRestiance, Supplier<Ingredient> repairIngredient) {
+    ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts,
+                      int enchantnmentValue, SoundEvent equipSound, float toughness, float knockbackRestiance,
+                      Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;
