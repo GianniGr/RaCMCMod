@@ -10,21 +10,21 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    SAPPHIRE("sapphire", 26, new int[]{5, 7, 5, 4}, 25, SoundEvents.ARMOR_EQUIP_GOLD,
-            1f, 0f, () -> Ingredient.of(ModItems.SAPPHIRE.get()));
+    SAPPHIRE("sapphire", 26, new int[]{5, 7, 5, 4}, 25,
+            SoundEvents.ARMOR_EQUIP_GOLD, 1f, 0f, () -> Ingredient.of(ModItems.SAPPHIRE.get()));
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;
     private final int enchantnmentValue;
     private final SoundEvent equipSound;
     private final float toughness;
-    private final float knockbackRestiance;
+    private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
 
-    private static final int[] BASE_DURABILITY = {11, 16, 16, 15, 13};
+    private static final int[] BASE_DURABILITY = {11, 16, 16, 13};
 
     ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts,
-                      int enchantnmentValue, SoundEvent equipSound, float toughness, float knockbackRestiance,
+                      int enchantnmentValue, SoundEvent equipSound, float toughness, float knockbackResistance,
                       Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
@@ -32,14 +32,14 @@ public enum ModArmorMaterials implements ArmorMaterial {
         this.enchantnmentValue = enchantnmentValue;
         this.equipSound = equipSound;
         this.toughness = toughness;
-        this.knockbackRestiance = knockbackRestiance;
+        this.knockbackResistance = knockbackResistance;
         this.repairIngredient = repairIngredient;
     }
 
 
     @Override
     public int getDurabilityForType(ArmorItem.Type type) {
-        return BASE_DURABILITY[type.ordinal() * this.durabilityMultiplier];
+        return BASE_DURABILITY[type.ordinal()] * this.durabilityMultiplier;
     }
 
     @Override
@@ -74,6 +74,6 @@ public enum ModArmorMaterials implements ArmorMaterial {
 
     @Override
     public float getKnockbackResistance() {
-        return this.knockbackRestiance;
+        return this.knockbackResistance;
     }
 }
