@@ -7,6 +7,7 @@
   "block.rac_mod.raw_sapphire_block": "Raw Block of Sapphire",
 
   "block.rac_mod.sound_block": "Sound Block",
+  "block.rac_mod.explosive_crate": "Explosive Crate",
 
   "item.rac_mod.sapphire_sword": "Sapphire Sword",
   "item.rac_mod.sapphire_pickaxe": "Sapphire Pickaxe",
@@ -18,6 +19,9 @@
   "item.rac_mod.sapphire_chestplate": "Sapphire Chestplate",
   "item.rac_mod.sapphire_leggings": "Sapphire Leggings",
   "item.rac_mod.sapphire_boots": "Sapphire Boots",
+
+  "item.rac_mod.kerwan_metropolis_music_disc": "Kerwan Metropolis Music Disc",
+  "item.rac_mod.kerwan_metropolis_music_disc_desc": "David Bergeaud - Metropolis",
 
   "creativetab.rac_tab": "Ratchet and Clank Tab"
 }

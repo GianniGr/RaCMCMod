@@ -44,6 +44,9 @@ public class ModCreativeModeTabs {
                         //Custom Blocks
                         output.accept(ModBlocks.SOUND_BLOCK.get());
                         output.accept(ModBlocks.EXPLOSIVE_CRATE.get());
+
+                        //MUSIC
+                        output.accept(ModItems.KERWAN_METROPOLIS_MUSIC_DISC.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

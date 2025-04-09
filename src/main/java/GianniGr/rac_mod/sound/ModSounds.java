@@ -13,11 +13,15 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUND_EVENTS =
         DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, Rac_mod.MOD_ID);
 
+    //SOUND EFFECTS
     public static final RegistryObject<SoundEvent> SOUND_BLOCK_BREAK = registerSoundEvents("sound_block_break");
     public static final RegistryObject<SoundEvent> SOUND_BLOCK_STEP = registerSoundEvents("sound_block_step");
     public static final RegistryObject<SoundEvent> SOUND_BLOCK_FALL = registerSoundEvents("sound_block_fall");
     public static final RegistryObject<SoundEvent> SOUND_BLOCK_PLACE = registerSoundEvents("sound_block_place");
     public static final RegistryObject<SoundEvent> SOUND_BLOCK_HIT = registerSoundEvents("sound_block_hit");
+
+    //OST
+    public static final RegistryObject<SoundEvent> KERWAN_METROPOLIS = registerSoundEvents("kerwan_metropolis");
 
     public static final ForgeSoundType SOUND_BLOCK_SOUNDS = new ForgeSoundType(1f, 1f,
             ModSounds.SOUND_BLOCK_BREAK, ModSounds.SOUND_BLOCK_STEP, ModSounds.SOUND_BLOCK_PLACE,

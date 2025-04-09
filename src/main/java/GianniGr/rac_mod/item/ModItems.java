@@ -2,6 +2,7 @@ package GianniGr.rac_mod.item;
 
 import GianniGr.rac_mod.Rac_mod;
 import GianniGr.rac_mod.item.custom.ModArmorItem;
+import GianniGr.rac_mod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -47,6 +48,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots",
             () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    //MUSIC
+    public static final RegistryObject<Item> KERWAN_METROPOLIS_MUSIC_DISC = ITEMS.register("kerwan_metropolis_music_disc",
+            () -> new RecordItem(6, ModSounds.KERWAN_METROPOLIS, new Item.Properties().stacksTo(1), 6160));
 
 
     public static void register(IEventBus eventBus) {

@@ -2,6 +2,7 @@ package GianniGr.rac_mod.datagen;
 
 import GianniGr.rac_mod.Rac_mod;
 import GianniGr.rac_mod.item.ModItems;
+import GianniGr.rac_mod.sound.ModSounds;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -41,19 +42,25 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        //ITEMS
         simpleItem(ModItems.SAPPHIRE);
         simpleItem(ModItems.RAW_SAPPHIRE);
 
+        //TOOLS
         handheldItem(ModItems.SAPPHIRE_SWORD);
         handheldItem(ModItems.SAPPHIRE_PICKAXE);
         handheldItem(ModItems.SAPPHIRE_AXE);
         handheldItem(ModItems.SAPPHIRE_SHOVEL);
         handheldItem(ModItems.SAPPHIRE_HOE);
 
+        //ARMOR
         trimmedArmorItem(ModItems.SAPPHIRE_HELMET);
         trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);
         trimmedArmorItem(ModItems.SAPPHIRE_LEGGINGS);
         trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
+
+        //MUSIC
+        simpleItem(ModItems.KERWAN_METROPOLIS_MUSIC_DISC);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

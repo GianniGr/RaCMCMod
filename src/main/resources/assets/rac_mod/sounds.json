@@ -1,32 +1,40 @@
 {
-"sound_block_break": {
-"subtitle": "sounds.rac_mod.sound_block_break",
-"sounds": [
-"rac_mod:sound_block_break"
-]
-},
-"sound_block_step": {
-"subtitle": "sounds.rac_mod.sound_block_step",
-"sounds": [
-"rac_mod:sound_block_step"
-]
-},
-"sound_block_place": {
-"subtitle": "sounds.rac_mod.sound_block_place",
-"sounds": [
-"rac_mod:sound_block_place"
-]
-},
-"sound_block_hit": {
-"subtitle": "sounds.rac_mod.sound_block_hit",
-"sounds": [
-"rac_mod:sound_block_hit"
-]
-},
-"sound_block_fall": {
-"subtitle": "sounds.rac_mod.sound_block_fall",
-"sounds": [
-"tutoriarac_modlmod:sound_block_fall"
-]
-}
+  "sound_block_break": {
+    "subtitle": "sounds.rac_mod.sound_block_break",
+    "sounds": [
+      "rac_mod:sound_block_break"
+    ]
+  },
+  "sound_block_step": {
+    "subtitle": "sounds.rac_mod.sound_block_step",
+    "sounds": [
+      "rac_mod:sound_block_step"
+    ]
+  },
+  "sound_block_place": {
+    "subtitle": "sounds.rac_mod.sound_block_place",
+    "sounds": [
+      "rac_mod:sound_block_place"
+    ]
+  },
+  "sound_block_hit": {
+    "subtitle": "sounds.rac_mod.sound_block_hit",
+    "sounds": [
+      "rac_mod:sound_block_hit"
+    ]
+  },
+  "sound_block_fall": {
+    "subtitle": "sounds.rac_mod.sound_block_fall",
+    "sounds": [
+      "rac_mod:sound_block_fall"
+    ]
+  },
+  "kerwan_metropolis": {
+    "sounds": [
+      {
+        "name": "rac_mod:kerwan_metropolis",
+        "stream": true
+      }
+    ]
+  }
 }
