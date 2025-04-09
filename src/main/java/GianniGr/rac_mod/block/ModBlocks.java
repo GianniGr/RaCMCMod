@@ -4,6 +4,7 @@ import GianniGr.rac_mod.Rac_mod;
 import GianniGr.rac_mod.block.custom.ExplosiveCrate;
 import GianniGr.rac_mod.block.custom.SoundBlock;
 import GianniGr.rac_mod.item.ModItems;
+import GianniGr.rac_mod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -30,7 +31,7 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops(), UniformInt.of(3,6)));
 
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
-            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK)));
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK).sound(ModSounds.SOUND_BLOCK_SOUNDS)));
 
     public static final RegistryObject<Block> EXPLOSIVE_CRATE = registerBlock("explosive_crate",
             () -> new ExplosiveCrate(BlockBehaviour.Properties.copy(Blocks.TNT)));

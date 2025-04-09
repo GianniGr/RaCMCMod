@@ -5,6 +5,7 @@ import GianniGr.rac_mod.entities.ModEntities;
 import GianniGr.rac_mod.item.ModCreativeModeTabs;
 import GianniGr.rac_mod.item.ModItems;
 import GianniGr.rac_mod.networking.NetworkHandler;
+import GianniGr.rac_mod.sound.ModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,6 +39,7 @@ public class Rac_mod {
         ModEntities.ENTITY_TYPES.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
