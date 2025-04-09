@@ -40,7 +40,7 @@ public class ExplosiveCrate extends TntBlock {
 
     private static void explode(Level pLevel, BlockPos pPos, @Nullable LivingEntity pEntity) {
         if (!pLevel.isClientSide) {
-            PrimedTnt primedtnt = new PrimedTnt(pLevel, (double)pPos.getX() + (double)0.5F, (double)pPos.getY(), (double)pPos.getZ() + (double)0.5F, pEntity);
+            PrimedTnt primedtnt = new PrimedExplosiveCrate(pLevel, (double)pPos.getX() + (double)0.5F, (double)pPos.getY(), (double)pPos.getZ() + (double)0.5F, pEntity);
             pLevel.addFreshEntity(primedtnt);
             pLevel.playSound(null, primedtnt.getX(), primedtnt.getY(), primedtnt.getZ(), SoundEvents.TNT_PRIMED, SoundSource.BLOCKS, 1.0F, 1.0F);
             pLevel.gameEvent(pEntity, GameEvent.PRIME_FUSE, pPos);

@@ -3,7 +3,6 @@ package GianniGr.rac_mod.datagen;
 import GianniGr.rac_mod.Rac_mod;
 import GianniGr.rac_mod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
