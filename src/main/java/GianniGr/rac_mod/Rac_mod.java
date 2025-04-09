@@ -2,7 +2,7 @@ package GianniGr.rac_mod;
 
 import GianniGr.rac_mod.block.ModBlocks;
 import GianniGr.rac_mod.block.entity.ModBlockEntities;
-import GianniGr.rac_mod.entities.ModEntities;
+import GianniGr.rac_mod.entity.ModEntities;
 import GianniGr.rac_mod.item.ModCreativeModeTabs;
 import GianniGr.rac_mod.item.ModItems;
 import GianniGr.rac_mod.networking.NetworkHandler;
@@ -46,6 +46,7 @@ public class Rac_mod {
         ModSounds.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModEntities.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in

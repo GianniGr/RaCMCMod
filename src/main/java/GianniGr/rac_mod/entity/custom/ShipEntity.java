@@ -1,4 +1,4 @@
-package GianniGr.rac_mod.entities;
+package GianniGr.rac_mod.entity.custom;
 
 import GianniGr.rac_mod.gui.PlanetSelectionScreen;
 import net.minecraft.nbt.CompoundTag;
